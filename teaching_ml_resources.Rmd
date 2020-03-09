@@ -23,6 +23,21 @@ knitr::opts_chunk$set(echo = TRUE)
 - [Making Learning Whole](https://pz.harvard.edu/resources/making-learning-whole-how-seven-principles-of-teaching-can-transform-education), David Perkins
 - [Teaching Tech Together](https://teachtogether.tech/), Greg Wilson
 
+## Curated lists
+
+- [AI Education References](https://docs.google.com/document/d/107ccrAr7y8ebJEuZHWRBuqvr_dinMjiptAnb9Rr0LKk/edit#heading=h.rbsgpoms6qqi)
+
+## Primary literature
+
+- [ACM Search Results](https://dl.acm.org/action/doSearch?fillQuickSearch=false&expand=dl&AllField=AllField%3A%28pedagogy+AND+%22machine+learning%22%29)
+- [Can You Teach Me To Machine Learn?](https://dl.acm.org/doi/abs/10.1145/3287324.3287392), Sulmont, Elisabeth, Patitsas, Elizabeth, Cooperstock, & Jeremy R.
+- [Do Artifacts Have Politics?](https://www.cc.gatech.edu/~beki/cs4001/Winner.pdf) Winner, Langdon
+- [Games and machine learning: a powerful combination in an artificial intelligence course](https://www.tandfonline.com/doi/abs/10.1080/08993400903525099?journalCode=ncse20), Wallace, Scott A., McCartney, Robert, & Russell, Ingrid
+- [Journal of the Learning Sciences, Volume 29, 2020](https://www.tandfonline.com/toc/hlns20/29/1?nav=tocList&)
+- [Introduction to the Special Section: Launching an Agenda for Research on Learning Machine Learning](https://dl.acm.org/doi/10.1145/3354136) Shapiro, R. Benjamin & Fiebrink, Rebecca
+- [Machine Learning: An Introductory Unit of Study for Secondary Education](https://dl.acm.org/doi/abs/10.1145/3287324.3293806), Young, Ramsey, Ringenberg, Jonathan
+- [Machine learning for end-users: exploring learning goals and pedagogical content knowledge](https://escholarship.mcgill.ca/concern/theses/2r36v2836) Sulmont, Elisabeth & Patitsas, Elizabeth
+
 ## Twitter accounts
 
 - [Abbie](https://twitter.com/abbierosemeow)
@@ -45,6 +60,7 @@ knitr::opts_chunk$set(echo = TRUE)
 - [Liza Bolton](https://twitter.com/Liza_Bolton)
 - [Dr. Megan Sumeracki](https://twitter.com/DrSumeracki)
 - [Meredith Broussard](https://twitter.com/merbroussard)
+- [Michelle Carney](https://twitter.com/michellercarney)
 - [Philip Guo](https://twitter.com/pgbovine)
 - [Phoebe Lin](https://twitter.com/aigelicwings)
 - [Rachel Thomas](https://twitter.com/math_rachel)
@@ -55,13 +71,6 @@ knitr::opts_chunk$set(echo = TRUE)
 - [The Carpentries](https://twitter.com/thecarpentries)
 - [Xanda Schofield](https://twitter.com/XandaSchofield)
 
-## Primary literature
-
-- [ACM Search Results](https://dl.acm.org/action/doSearch?fillQuickSearch=false&expand=dl&AllField=AllField%3A%28pedagogy+AND+%22machine+learning%22%29)
-- [Journal of the Learning Sciences, Volume 29, 2020](https://www.tandfonline.com/toc/hlns20/29/1?nav=tocList&)
-- [Introduction to the Special Section: Launching an Agenda for Research on Learning Machine Learning](https://dl.acm.org/doi/10.1145/3354136) Shapiro, R. Benjamin & Fiebrink, Rebecca
-- [Machine learning for end-users: exploring learning goals and pedagogical content knowledge](https://escholarship.mcgill.ca/concern/theses/2r36v2836) Sulmont, Elisabeth & Patitsas, Elizabeth
-
 ## Videos
 
 ## Websites and workshops
@@ -71,4 +80,5 @@ knitr::opts_chunk$set(echo = TRUE)
 - [Cognimates](http://cognimates.me/home/)
 - [fast.ai](https://www.fast.ai/)
 - Maxime Lenormand's [Keras for computer vision applied to satellite imagery](https://github.com/MaxLenormand/Keras-for-computer-vision)
+- [Introduction to Fairness, Accountability, and Transparency in Machine Learning](https://rl.talis.com/3/oxford/lists/B883ED88-8D6F-583E-3B0A-78551D177BD1.html)
 - [Microsoft Machine Teaching Group](https://www.microsoft.com/en-us/research/group/machine-teaching-group/)
