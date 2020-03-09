@@ -1,0 +1,74 @@
+---
+title: "Resources for teaching machine learning"
+author: "Jesse Mostipak"
+date: "3/8/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+# Background
+[Original tweet](https://twitter.com/kierisi/status/1235060151737958400)
+
+## Blogs and blog posts
+
+- Alison Hill's [Learning to Teach Machines to Learn](https://alison.rbind.io/post/2019-12-23-learning-to-teach-machines-to-learn/)
+- Amy Ko's [We need to learn how to teach machine learning](https://medium.com/bits-and-behavior/we-need-to-learn-how-to-teach-machine-learning-acc78bac3ff8)
+- fast.ai's [Providing a Good Education in Deep Learning](https://www.fast.ai/2016/10/08/teaching-philosophy/)
+
+## Books
+
+- [Artificial Unintelligence: How Computers Misunderstand the World](https://mitpress.mit.edu/books/artificial-unintelligence), Meredith Broussard
+- [Making Learning Whole](https://pz.harvard.edu/resources/making-learning-whole-how-seven-principles-of-teaching-can-transform-education), David Perkins
+- [Teaching Tech Together](https://teachtogether.tech/), Greg Wilson
+
+## Twitter accounts
+
+- [Abbie](https://twitter.com/abbierosemeow)
+- [Abeba Birhane](https://twitter.com/Abebab)
+- [Anca Tenea](https://twitter.com/AncaTenea)
+- [Amy J. Ko](https://twitter.com/amyjko)
+- [Anna Fergusson](https://twitter.com/annafergussonnz)
+- [Ben Shapiro](https://twitter.com/bennytheshap)
+- [Britt Paris](https://twitter.com/drbrittparis)
+- [Claire Le Goues](https://twitter.com/clegoues)
+- [Cynthia Taylor](https://twitter.com/pinkhairedcyn)
+- [Elanor Huntington](https://twitter.com/profElanor)
+- [Elizabeth Patitsas](https://twitter.com/patitsel)
+- [Elizabeth Wickes](https://twitter.com/elliewix)
+- [Jeremy Howard](https://twitter.com/jeremyphoward)
+- [Jessica Van Brummelen](https://twitter.com/JessVanBrum)
+- [Joe Polman](https://twitter.com/joepolman)
+- [Kris Gutierrez](https://twitter.com/KrisGutierrez)
+- [Lavanya](https://twitter.com/lavanyaai)
+- [Liza Bolton](https://twitter.com/Liza_Bolton)
+- [Dr. Megan Sumeracki](https://twitter.com/DrSumeracki)
+- [Meredith Broussard](https://twitter.com/merbroussard)
+- [Philip Guo](https://twitter.com/pgbovine)
+- [Phoebe Lin](https://twitter.com/aigelicwings)
+- [Rachel Thomas](https://twitter.com/math_rachel)
+- [Rebecca Fiebrink](https://twitter.com/RebeccaFiebrink)
+- [Rhys Christopher Jones](https://twitter.com/rhysauck)
+- [Stefania](https://twitter.com/Stefania_druga)
+- [Steph Dick](https://twitter.com/mysdick)
+- [The Carpentries](https://twitter.com/thecarpentries)
+- [Xanda Schofield](https://twitter.com/XandaSchofield)
+
+## Primary literature
+
+- [ACM Search Results](https://dl.acm.org/action/doSearch?fillQuickSearch=false&expand=dl&AllField=AllField%3A%28pedagogy+AND+%22machine+learning%22%29)
+- [Journal of the Learning Sciences, Volume 29, 2020](https://www.tandfonline.com/toc/hlns20/29/1?nav=tocList&)
+- [Introduction to the Special Section: Launching an Agenda for Research on Learning Machine Learning](https://dl.acm.org/doi/10.1145/3354136) Shapiro, R. Benjamin & Fiebrink, Rebecca
+- [Machine learning for end-users: exploring learning goals and pedagogical content knowledge](https://escholarship.mcgill.ca/concern/theses/2r36v2836) Sulmont, Elisabeth & Patitsas, Elizabeth
+
+## Videos
+
+## Websites and workshops
+
+- [AI4K12.org](https://github.com/touretzkyds/ai4k12/wiki)
+- Alison Hill's [Introduction to Machine Learning with the Tidyverse](https://t.co/GhIaoQYXOX?amp=1)
+- [Cognimates](http://cognimates.me/home/)
+- [fast.ai](https://www.fast.ai/)
+- Maxime Lenormand's [Keras for computer vision applied to satellite imagery](https://github.com/MaxLenormand/Keras-for-computer-vision)
+- [Microsoft Machine Teaching Group](https://www.microsoft.com/en-us/research/group/machine-teaching-group/)
