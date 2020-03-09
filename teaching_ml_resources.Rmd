@@ -2,7 +2,7 @@
 title: "Resources for teaching machine learning"
 author: "Jesse Mostipak"
 date: "3/8/2020"
-output: html_document
+output: github_document
 ---
 
 ```{r setup, include=FALSE}
