@@ -1,0 +1,133 @@
+---
+title: "Tidy Models"
+author: "Arvind Venkatadri"
+date: "3/9/2020"
+output:
+  github_document: default
+  pdf_document:
+    toc: yes
+    latex_engine: xelatex
+  prettydoc::html_pretty:
+    highlight: github
+    theme: cayman
+  html_document:
+    df_print: default #kable/tibble/paged
+    toc: yes
+    toc_depth: 4
+    toc_float: true
+    theme : darkly
+    number_sections: true
+    highlight: pygments
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+# install.packages(c("tidyverse", "tidymodels", "remotes","rpart.plot", "rattle", "vip", "AmesHousing", "kknn", "rpart", "ranger", "partykit"))
+
+# remotes::install_github(c("tidymodels/workflows","tidymodels/tune", "tidymodels/modeldata"))
+library(tidyverse)
+library(AmesHousing)
+library(tidymodels)
+library(tune)
+
+# AmesHousing: Descriptions of 2,930 houses sold in Ames, IA ( Where Jane Smiley lives) from 2006 to 2010, collected by the Ames Assessor’s Office.
+
+ames <- AmesHousing::make_ames() %>% 
+  dplyr::select(-matches("Qu"))
+glimpse(ames)
+
+# Fit a linear model
+lm_ames <- lm(data = ames, Sale_Price ~ Gr_Liv_Area)
+lm_ames
+# ?formula for help
+summary(lm_ames)
+
+```
+Hypothesis -> Explains -> Reality
+Model -> Matches? -> Data
+Hypothesis -> Model based on how well model matches data.
+TBD: put this into UML.
+
+The `parsnip` package is a successor to `caret'.
+To model with `parsnip`:
+1. Pick a `model` : check [here](https://tidymodels.github.io/parsnip/articles/articles/Models.html) for models available in `tidymodels`
+2. Set the `engine`
+3. Set the `mode` ( if needed)
+
+```{r parsnip-1}
+decision_tree() %>% 
+  set_engine("C5.0") %>% 
+  set_mode("classification")
+
+nearest_neighbor() %>% 
+  set_engine("kknn") %>% 
+  set_mode("regression")
+
+linear_reg(mode = "regression", # default mode
+  penalty = NULL, # Model hyperparameter
+  mixture = NULL) # Model hyperparameter
+
+lm_spec <- linear_reg() %>% 
+  set_engine(engine = "lm")
+lm_spec # a parsnip model
+
+lm_fit <- fit_data(Sale_Price ~ Gr_Liv_Area, model = lm_spec, data = ames)
+# Check if lm_fit and lm_ames give the same results. 
+
+lm_fit
+lm_ames
+```
+
+```{r}
+lm_fit %>% predict(new_data = ames)
+```
+
+Use predict() to
+
+ - Use your linear model to predict sale prices; save the tibble as `price_pred`
+- Add a pipe and use mutate() to add a column with the observed sale prices; name it `truth`
+- Hint: Be sure to remove every _ before running the code!
+
+```{r}
+price_pred <- predict(lm_fit, new_data = ames) %>% 
+  dplyr::mutate(price_truth = ames$Sale_Price)
+price_pred
+
+yardstick::rmse(price_pred,truth = price_truth ,estimate = .pred)
+```
+We test the model using data splits into training data and (holdout) test data
+```{r Testing}
+set.seed(100)
+ames_split <- initial_split(ames, prop = 3/4)
+ames_split
+train_set <- training(ames_split)
+test_set <- testing(ames_split)
+train_set
+test_set
+
+my_mod <- linear_reg() %>% 
+  set_engine(engine = "lm")
+
+my_fit <- fit_data(Sale_Price ~ Gr_Liv_Area,
+                   model = my_mod,
+                   data = train_set)
+
+price_pred <- predict(my_fit, new_data = test_set) %>% 
+  dplyr::mutate(price_truth = test_set$Sale_Price)
+price_pred
+testing_rmse <- yardstick::rmse(price_pred,truth = price_truth, ,estimate = .pred)
+testing_rmse
+
+# How to find "training RMSE"? NOT WORKING...NOT UNDERSTOOD
+train_pred <- predict(my_fit, new_data = train_set) %>% 
+  dplyr::mutate(true_price = train_set$Sale_Price)
+training_rmse <- yardstick::rmse(train_pred,truth = true_price,estimate = .pred)
+testing_rmse
+```
+
+We can do ** Stratified Sampling** instead of random sampling.
+
+```{r stratified sampling}
+
+```
+
